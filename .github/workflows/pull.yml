@@ -1,0 +1,19 @@
+name: Github Pullflow
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+      - run: npx jest --coverage
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          SONAR_CLOUD_TOKEN: ${{ secrets.SONAR_CLOUD_TOKEN }}
+          GITHUB_PR_NUMBER: ${{ github.event.number }}
+        run: npm run scan:pull

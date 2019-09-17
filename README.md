@@ -1,0 +1,5 @@
+# is-asynchronous-lambda-event
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.jordansinko.is-asynchronous-lambda-event&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.jordansinko.is-asynchronous-lambda-event) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.jordansinko.is-asynchronous-lambda-event&metric=coverage)](https://sonarcloud.io/dashboard?id=com.jordansinko.is-asynchronous-lambda-event) [![Language Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/JordanSinko/is-asynchronous-lambda-event.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JordanSinko/is-asynchronous-lambda-event/context:javascript) [![Build Status](https://shields-staging-pr-3898.herokuapp.com/github/actions/JordanSinko/is-asynchronous-lambda-event/Github%20Pushflow)](https://github.com/JordanSinko/is-asynchronous-lambda-event/actions) [![Downloads](https://img.shields.io/npm/dm/is-asynchronous-lambda-event)](https://www.npmjs.com/package/is-asynchronous-lambda-event)
+
+https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html

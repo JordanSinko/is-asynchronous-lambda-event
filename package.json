@@ -1,0 +1,34 @@
+{
+  "name": "is-asynchronous-lambda-event",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "release": "semantic-release",
+    "scan:push": "sonar-scanner -Dsonar.login=$SONAR_CLOUD_TOKEN -Dsonar.projectVersion=$npm_package_version",
+    "scan:pull": "sonar-scanner -Dsonar.login=$SONAR_CLOUD_TOKEN -Dsonar.pullrequest.key=$GITHUB_PR_NUMBER -Dsonar.pullrequest.branch=$GITHUB_HEAD_REF"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@semantic-release/git": "^7.0.16",
+    "@types/jest": "^24.0.18",
+    "cz-conventional-changelog": "3.0.2",
+    "jest": "^24.9.0",
+    "semantic-release": "^15.13.24",
+    "sonarqube-scanner": "^2.5.0"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
